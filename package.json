@@ -1,0 +1,29 @@
+{
+  "name": "postcss-replace",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gridonic <hello@gridonic.ch>",
+  "license": "MIT",
+  "dependencies": {
+    "deep-get-set": "^1.1.0",
+    "postcss": "^6.0.13"
+  },
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin"
+  ],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gridonic/postcss-replace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gridonic/postcss-replace/issues"
+  },
+  "homepage": "https://github.com/gridonic/postcss-replace#readme",
+  "description": "PostCSS plugin for simply replacing strings."
+}
