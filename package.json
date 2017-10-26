@@ -14,7 +14,9 @@
   "keywords": [
     "postcss",
     "css",
-    "postcss-plugin"
+    "postcss-plugin",
+    "replace",
+    "strings"
   ],
   "devDependencies": {},
   "repository": {
