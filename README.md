@@ -47,7 +47,7 @@ something different, for example `/_([^\s]+?)_/` to match strings like `_myExamp
 - Type: `boolean`
 - Default: `false`
 
-By default the plugin will replace strings in comments _and_ values. Turn the to true if you _only_ want to replace strings 
+By default the plugin will replace strings in comments _and_ values. Turn this to `true` if you _only_ want to replace strings 
 in comments.
 
 ### `data`
