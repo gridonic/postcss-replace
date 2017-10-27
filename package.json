@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Gridonic <hello@gridonic.ch>",
   "license": "MIT",
@@ -18,7 +18,9 @@
     "replace",
     "strings"
   ],
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^21.2.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gridonic/postcss-replace.git"
