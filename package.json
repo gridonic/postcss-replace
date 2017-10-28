@@ -17,9 +17,11 @@
     "url": "https://github.com/gridonic/postcss-replace/issues"
   },
   "scripts": {
+    "coverage": "jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test": "jest"
   },
   "dependencies": {
+    "coveralls": "^3.0.0",
     "deep-get-set": "^1.1.0",
     "postcss": "^6.0.13"
   },
