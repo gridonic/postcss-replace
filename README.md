@@ -4,6 +4,7 @@
 [![Build Status][cli-img]][cli-url]
 [![Licensing][lic-img]][lic-url]
 [![Changelog][log-img]][log-url]
+[![Coverage Status][cov-img]][cov-url]
 
 [PostCSS] plugin for replacing strings.
 
@@ -71,5 +72,7 @@ This is the key → value object that provides the data for the plugin for repla
 [lic-img]: https://img.shields.io/npm/l/postcss-replace.svg
 [log-url]: CHANGELOG.md
 [log-img]: https://img.shields.io/badge/changelog-md-blue.svg
+[cov-url]: https://coveralls.io/github/gridonic/postcss-replace?branch=develop
+[cov-img]: https://coveralls.io/repos/github/gridonic/postcss-replace/badge.svg?branch=develop
 
 [PostCSS]: https://github.com/postcss/postcss
