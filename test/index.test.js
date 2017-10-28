@@ -22,10 +22,22 @@ function run(input, opts) {
         });
 }
 
-it('Should replace “name” string in a comment/value.', () => {
+it('Should replace strings in comments and styles.', () => {
     return run('basic', { data: pkg });
 });
 
-it('Should NOT replace anything in a value, when “commentsOnly” option is set to TRUE.', () => {
+it('Should not replace anything in styles when “commentsOnly” option is set to TRUE.', () => {
     return run('commentsOnly', { data: pkg, commentsOnly: true });
+});
+
+it('Should not change unknown variables', () => {
+    return run('noChanges', { data: pkg });
+});
+
+it('Should work with custom RegEx object', () => {
+    return run('basic', { data: pkg, pattern: new RegExp('{{\\s?([^\\s]+?)\\s?}}', 'gi') });
+});
+
+it('Should work with deep data objects', () => {
+    return run('deep', { data: { level1: { level2: 'test' } } });
 });

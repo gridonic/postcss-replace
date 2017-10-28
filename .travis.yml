@@ -3,3 +3,4 @@ node_js:
   - "node"
 after_success:
   - "yarn coverage"
+  - "yarn coverall"
