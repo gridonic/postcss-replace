@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ae0f50a-6368-44c8-978c-363cfda9ac69" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/deep.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/deep.expected.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/noChanges.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/fixtures/noChanges.expected.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/index.test.js" afterPath="$PROJECT_DIR$/test/index.test.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +18,8 @@
       <file leaf-file-name="index.test.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/index.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+            <state relative-caret-position="282">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -34,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/test/fixtures/deep.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -44,7 +39,7 @@
         <entry file="file://$PROJECT_DIR$/test/fixtures/deep.expected.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -63,15 +58,15 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+            <state relative-caret-position="-161">
+              <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
               <folding>
-                <marker date="1509190330402" expanded="true" signature="92:172" ph="{&quot;pattern&quot;: '{{\\s?([^\\s]+?)\\s?}}'...}" />
-                <marker date="1509190330402" expanded="true" signature="247:298" ph="{...}" />
-                <marker date="1509190330402" expanded="true" signature="321:1011" ph="{...}" />
-                <marker date="1509190330402" expanded="true" signature="532:558" ph="{...}" />
-                <marker date="1509190330402" expanded="true" signature="565:763" ph="{...}" />
-                <marker date="1509190330402" expanded="true" signature="793:980" ph="{...}" />
+                <marker date="1509211823048" expanded="true" signature="92:171" ph="{&quot;pattern&quot;: '{{\\s?([^\\s]+?)\\s?}}'...}" />
+                <marker date="1509211823048" expanded="true" signature="246:301" ph="{...}" />
+                <marker date="1509211823048" expanded="true" signature="324:1084" ph="{...}" />
+                <marker date="1509211823048" expanded="true" signature="535:585" ph="{...}" />
+                <marker date="1509211823048" expanded="true" signature="592:790" ph="{...}" />
+                <marker date="1509211823048" expanded="true" signature="866:1053" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -105,7 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/.coveralls.yml" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -116,6 +110,7 @@
         <option value="$PROJECT_DIR$/test/fixtures/noChanges.css" />
         <option value="$PROJECT_DIR$/test/fixtures/deep.css" />
         <option value="$PROJECT_DIR$/test/fixtures/deep.expected.css" />
+        <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/test/index.test.js" />
       </list>
     </option>
@@ -296,7 +291,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509189639986</updated>
-      <workItem from="1509189642615" duration="9783000" />
+      <workItem from="1509189642615" duration="13477000" />
     </task>
     <task id="LOCAL-00001" summary="Fix bug, made test green. Add .idea files.">
       <created>1509190537816</created>
@@ -330,30 +325,44 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Jest_Test - 2017.10.28 at 13h 27m 46s.xml">
+    <history-entry file="Jest_Test - 2017.10.28 at 18h 15m 55s.xml">
       <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_Test - 2017.10.28 at 13h 29m 44s.xml">
+    <history-entry file="Jest_Test - 2017.10.28 at 18h 22m 54s.xml">
       <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_Test - 2017.10.28 at 17h 44m 40s.xml">
+    <history-entry file="Jest_Test - 2017.10.28 at 18h 25m 04s.xml">
       <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_Test - 2017.10.28 at 17h 47m 45s.xml">
+    <history-entry file="Jest_Test - 2017.10.28 at 19h 10m 56s.xml">
       <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Jest_Test - 2017.10.28 at 17h 55m 27s.xml">
+    <history-entry file="Jest_Test - 2017.10.28 at 19h 21m 35s.xml">
+      <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Jest_Test - 2017.10.28 at 19h 26m 49s.xml">
+      <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Jest_Test - 2017.10.28 at 19h 28m 46s.xml">
+      <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Jest_Test - 2017.10.28 at 19h 30m 26s.xml">
+      <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Jest_Test - 2017.10.28 at 19h 32m 09s.xml">
+      <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Jest_Test - 2017.10.28 at 19h 33m 51s.xml">
       <configuration name="Jest Test" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9783000" />
+    <option name="totallyTimeSpent" value="13477000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -394,20 +403,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <condition expression="typeof options.pattern !== 'string'" language="JavaScript" />
           <url>file://$PROJECT_DIR$/index.js</url>
-          <line>13</line>
+          <line>10</line>
           <properties />
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/index.js</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="25" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -465,10 +467,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1509206705805" expanded="true" signature="34606:34623" ph="..." />
-            <marker date="1509206705805" expanded="true" signature="34606:34641" ph="..." />
-            <marker date="1509206705805" expanded="true" signature="34606:34654" ph="..." />
-            <marker date="1509206705805" expanded="true" signature="34606:34669" ph="..." />
+            <marker date="1509212067672" expanded="true" signature="35924:35941" ph="..." />
+            <marker date="1509212067672" expanded="true" signature="35924:35959" ph="..." />
+            <marker date="1509212067672" expanded="true" signature="35924:35972" ph="..." />
+            <marker date="1509212067672" expanded="true" signature="35924:35987" ph="..." />
           </folding>
         </state>
       </provider>
@@ -588,7 +590,7 @@
     <entry file="file://$PROJECT_DIR$/test/fixtures/deep.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -596,30 +598,54 @@
     <entry file="file://$PROJECT_DIR$/test/fixtures/deep.expected.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="80">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/test.expected.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/fixtures/test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript6.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="19" column="50" lean-forward="true" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+        <state relative-caret-position="-161">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
-            <marker date="1509190330402" expanded="true" signature="92:172" ph="{&quot;pattern&quot;: '{{\\s?([^\\s]+?)\\s?}}'...}" />
-            <marker date="1509190330402" expanded="true" signature="247:298" ph="{...}" />
-            <marker date="1509190330402" expanded="true" signature="321:1011" ph="{...}" />
-            <marker date="1509190330402" expanded="true" signature="532:558" ph="{...}" />
-            <marker date="1509190330402" expanded="true" signature="565:763" ph="{...}" />
-            <marker date="1509190330402" expanded="true" signature="793:980" ph="{...}" />
+            <marker date="1509211823048" expanded="true" signature="92:171" ph="{&quot;pattern&quot;: '{{\\s?([^\\s]+?)\\s?}}'...}" />
+            <marker date="1509211823048" expanded="true" signature="246:301" ph="{...}" />
+            <marker date="1509211823048" expanded="true" signature="324:1084" ph="{...}" />
+            <marker date="1509211823048" expanded="true" signature="535:585" ph="{...}" />
+            <marker date="1509211823048" expanded="true" signature="592:790" ph="{...}" />
+            <marker date="1509211823048" expanded="true" signature="866:1053" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/index.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+        <state relative-caret-position="282">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
         </state>
       </provider>
