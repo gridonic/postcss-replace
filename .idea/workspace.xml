@@ -11,15 +11,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.test.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.test.js">
+      <file leaf-file-name="index.test.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/index.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
               <folding>
-                <marker date="1509114972175" expanded="true" signature="97:293" ph="{...}" />
-                <marker date="1509114972175" expanded="true" signature="176:203" ph="{...}" />
-                <marker date="1509114972175" expanded="true" signature="350:505" ph="{...}" />
+                <marker date="1509190640899" expanded="true" signature="103:299" ph="{...}" />
+                <marker date="1509190640899" expanded="true" signature="182:209" ph="{...}" />
+                <marker date="1509190640899" expanded="true" signature="356:509" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -29,7 +29,7 @@
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
-              <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+              <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
               <folding>
                 <marker date="1509190330402" expanded="true" signature="92:172" ph="{&quot;pattern&quot;: '{{\\s?([^\\s]+?)\\s?}}'...}" />
                 <marker date="1509190330402" expanded="true" signature="247:298" ph="{...}" />
@@ -102,16 +102,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1509190553564" expanded="true" signature="25603:25620" ph="..." />
-                <marker date="1509190553564" expanded="true" signature="25603:25638" ph="..." />
-                <marker date="1509190553564" expanded="true" signature="25603:25651" ph="..." />
-                <marker date="1509190553564" expanded="true" signature="25603:25666" ph="..." />
+                <marker date="1509190817787" expanded="true" signature="26260:26277" ph="..." />
+                <marker date="1509190817787" expanded="true" signature="26260:26295" ph="..." />
+                <marker date="1509190817787" expanded="true" signature="26260:26308" ph="..." />
+                <marker date="1509190817787" expanded="true" signature="26260:26323" ph="..." />
               </folding>
             </state>
           </provider>
@@ -120,8 +120,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="223">
+              <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -137,6 +137,8 @@
       <list>
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/test/index.test.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -209,7 +211,7 @@
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="postcss-replace" type="cbb8eebc:String" user="postcss-replace" />
-              <item name=".idea" type="cbb8eebc:String" user=".idea" />
+              <item name="test" type="cbb8eebc:String" user="test" />
             </path>
           </expand>
           <select />
@@ -230,6 +232,11 @@
     <property name="JavaScriptPreferStrict" value="true" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/test" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -286,7 +293,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1509189639986</updated>
-      <workItem from="1509189642615" duration="916000" />
+      <workItem from="1509189642615" duration="1198000" />
     </task>
     <task id="LOCAL-00001" summary="Fix bug, made test green. Add .idea files.">
       <created>1509190537816</created>
@@ -295,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1509190537816</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add test directory. Reordered package.json entries.">
+      <created>1509190845208</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1509190845208</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -307,7 +321,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="916000" />
+    <option name="totallyTimeSpent" value="1198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="6" />
@@ -345,7 +359,8 @@
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
     <MESSAGE value="Fix bug, made test green. Add .idea files." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix bug, made test green. Add .idea files." />
+    <MESSAGE value="Add test directory. Reordered package.json entries." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test directory. Reordered package.json entries." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -354,30 +369,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1509114972175" expanded="true" signature="97:293" ph="{...}" />
-            <marker date="1509114972175" expanded="true" signature="176:203" ph="{...}" />
-            <marker date="1509114972175" expanded="true" signature="350:505" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
-          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding>
             <marker date="1509190330402" expanded="true" signature="92:172" ph="{&quot;pattern&quot;: '{{\\s?([^\\s]+?)\\s?}}'...}" />
             <marker date="1509190330402" expanded="true" signature="247:298" ph="{...}" />
@@ -442,10 +437,30 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1509190553564" expanded="true" signature="25603:25620" ph="..." />
-            <marker date="1509190553564" expanded="true" signature="25603:25638" ph="..." />
-            <marker date="1509190553564" expanded="true" signature="25603:25651" ph="..." />
-            <marker date="1509190553564" expanded="true" signature="25603:25666" ph="..." />
+            <marker date="1509190817787" expanded="true" signature="26260:26277" ph="..." />
+            <marker date="1509190817787" expanded="true" signature="26260:26295" ph="..." />
+            <marker date="1509190817787" expanded="true" signature="26260:26308" ph="..." />
+            <marker date="1509190817787" expanded="true" signature="26260:26323" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/index.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="3" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
+          <folding>
+            <marker date="1509190640899" expanded="true" signature="103:299" ph="{...}" />
+            <marker date="1509190640899" expanded="true" signature="182:209" ph="{...}" />
+            <marker date="1509190640899" expanded="true" signature="356:509" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -1,5 +1,5 @@
 var postcss = require('postcss');
-var plugin = require('./');
+var plugin = require('../index');
 
 function run(input, output, opts) {
 
@@ -12,8 +12,8 @@ function run(input, output, opts) {
 
 it('should replace version string in a comment', () => {
     return run(
-        '/* CustomCSS Library v{{ version }} */', 
-        '/* CustomCSS Library v1.3.7 */', 
+        '/* CustomCSS Library v{{ version }} */',
+        '/* CustomCSS Library v1.3.7 */',
         { data: { version: '1.3.7' }}
     );
 });
