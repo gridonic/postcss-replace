@@ -1,0 +1,5 @@
+/* {{ name }} by {{ author }} */
+
+.default {
+    content: "{{ name }}";
+}
