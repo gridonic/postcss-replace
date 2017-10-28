@@ -11,14 +11,21 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
     const options = Object.assign(defaults, opts);
 
     return (css) => {
-        const regex = typeof options.pattern === 'string' ? new RegExp(options.pattern, 'gi') : options.pattern;
+        const regex = typeof options.pattern === 'string' ?
+            new RegExp(options.pattern, 'gi') : options.pattern;
 
         css[options.commentsOnly ? 'walkComments' : 'walk'](
             (node) => {
                 if (node.text) {
-                    node.text.replace(regex, (match, key) => (deep(options.data, key) || match))
+                    node.text = node.text.replace(
+                        regex,
+                        (match, key) => (deep(options.data, key) || match)
+                    )
                 } else if (node.replaceValues) {
-                    node.replaceValues(regex, (match, key) => (deep(options.data, key) || match))
+                    node.replaceValues(
+                        regex,
+                        (match, key) => (deep(options.data, key) || match)
+                    )
                 }
             }
         );
