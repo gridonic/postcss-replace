@@ -32,5 +32,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gridonic/postcss-replace.git"
+  },
+  "engines": {
+    "node": ">=6"
   }
 }
