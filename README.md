@@ -72,7 +72,7 @@ This is the key → value object that provides the data for the plugin for repla
 [lic-img]: https://img.shields.io/npm/l/postcss-replace.svg
 [log-url]: CHANGELOG.md
 [log-img]: https://img.shields.io/badge/changelog-md-blue.svg
-[cov-url]: https://coveralls.io/github/gridonic/postcss-replace?branch=develop
-[cov-img]: https://coveralls.io/repos/github/gridonic/postcss-replace/badge.svg?branch=develop
+[cov-url]: https://coveralls.io/github/gridonic/postcss-replace?branch=master
+[cov-img]: https://coveralls.io/repos/github/gridonic/postcss-replace/badge.svg?branch=master
 
 [PostCSS]: https://github.com/postcss/postcss
