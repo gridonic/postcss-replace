@@ -1,2 +1,7 @@
 node_modules
 coverage
+
+# IDEA user specific stuff
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries

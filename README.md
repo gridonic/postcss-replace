@@ -2,9 +2,9 @@
 
 [![NPM Version][npm-img]][npm-url]
 [![Build Status][cli-img]][cli-url]
+[![Coverage Status][cov-img]][cov-url]
 [![Licensing][lic-img]][lic-url]
 [![Changelog][log-img]][log-url]
-[![Coverage Status][cov-img]][cov-url]
 
 [PostCSS] plugin for replacing strings.
 
