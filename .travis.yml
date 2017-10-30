@@ -1,6 +1,15 @@
 language: node_js
 node_js:
-  - "node"
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+matrix:
+  fast_finish: true
+  allow_failures:
+    - node_js: '4'
+    - node_js: '5'
 after_success:
-  - "yarn coverage"
-  - "yarn coverall"
+  - 'yarn coverage'
+  - 'yarn coverall'
