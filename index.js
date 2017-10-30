@@ -20,7 +20,9 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
                 if (node.text) {
                     node.text = node.text.replace(
                         regex,
-                        (match, key) => (deep(options.data, key) || match)
+                        (match, key) => (
+                            deep(options.data, key) || match
+                        )
                     )
                 }
 
@@ -28,7 +30,9 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
                 else if (node.replaceValues) {
                     node.replaceValues(
                         regex,
-                        (match, key) => (deep(options.data, key) || match)
+                        (match, key) => (
+                            deep(options.data, key) || match
+                        )
                     )
                 }
             }
