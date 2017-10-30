@@ -1,0 +1,17 @@
+/* % name % by % author % */
+
+.default {
+    content: "% name %";
+}
+
+.default-without-spaces {
+    content: "%name%";
+}
+
+.default-without-spaces {
+    content: "% name%";
+}
+
+.default-without-spaces {
+    content: "%name %";
+}

@@ -38,6 +38,14 @@ it('Should not change unknown variables', () => {
     return run('noChanges', { data: pkg });
 });
 
+it('Should work with deep data objects', () => {
+    return run('deep', { data: { level1: { level2: 'test' } } });
+});
+
+it('Should work with a custom RegEx', () => {
+    return run('otherRegEx', { data: pkg, pattern: /%\s?([^\s]+?)\s?%/gi });
+});
+
 it('Should work with a custom RegEx object', () => {
     return run('basic', { data: pkg, pattern: new RegExp(/{{\s?([^\s]+?)\s?}}/, 'gi') });
 });
@@ -46,6 +54,6 @@ it('Should work with a custom RegEx string', () => {
     return run('basic', { data: pkg, pattern: '{{\\s?([^\\s]+?)\\s?}}' });
 });
 
-it('Should work with deep data objects', () => {
-    return run('deep', { data: { level1: { level2: 'test' } } });
+it('Should work with another custom RegEx string', () => {
+    return run('otherRegEx', { data: pkg, pattern: '%\\s?([^\\s]+?)\\s?%' });
 });
