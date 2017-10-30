@@ -7,7 +7,7 @@ const fs = require('fs');
  * Runs the plugins process function. Tests whether the given input is equal
  * to the expected output with the given options.
  *
- * @param {string} input Input fixture file.
+ * @param {string} input Input fixture file name.
  * @param {object} opts Options to be used by the plugin.
  * @return {function}
  */
@@ -28,6 +28,10 @@ it('Should replace strings in comments and styles.', () => {
 
 it('Should not replace anything in styles when “commentsOnly” option is set to TRUE.', () => {
     return run('commentsOnly', { data: pkg, commentsOnly: true });
+});
+
+it('Should not replace anything without data', () => {
+    return run('noChanges');
 });
 
 it('Should not change unknown variables', () => {
