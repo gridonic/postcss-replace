@@ -43,7 +43,7 @@ it('Should work with deep data objects', () => {
 });
 
 it('Should work with a custom RegEx', () => {
-    return run('otherRegEx', { data: pkg, pattern: /%\s?([^\s]+?)\s?%/gi });
+    return run('otherRegex', { data: pkg, pattern: /%\s?([^\s]+?)\s?%/gi });
 });
 
 it('Should work with a custom RegEx object', () => {
@@ -55,5 +55,5 @@ it('Should work with a custom RegEx string', () => {
 });
 
 it('Should work with another custom RegEx string', () => {
-    return run('otherRegEx', { data: pkg, pattern: '%\\s?([^\\s]+?)\\s?%' });
+    return run('otherRegex', { data: pkg, pattern: '%\\s?([^\\s]+?)\\s?%' });
 });
