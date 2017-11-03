@@ -14,28 +14,24 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
         const regex = typeof options.pattern === 'string' ?
             new RegExp(options.pattern, 'gi') : options.pattern;
 
-        css[options.commentsOnly ? 'walkComments' : 'walk'](
-            (node) => {
-                // Node
-                if (node.text) {
-                    node.text = node.text.replace(
-                        regex,
-                        (match, key) => (
-                            deep(options.data, key) || match
-                        )
-                    )
-                }
+        const replacementArgs = [
+            regex,
+            (match, key) => (deep(options.data, key) || match)
+        ];
 
-                // Container
-                else if (node.replaceValues) {
-                    node.replaceValues(
-                        regex,
-                        (match, key) => (
-                            deep(options.data, key) || match
-                        )
-                    )
-                }
+        const nodeWalker = css[options.commentsOnly ? 'walkComments' : 'walk'].bind(css);
+
+        nodeWalker((node) => {
+
+            // Node
+            if (node.text) {
+                node.text = node.text.replace(...replacementArgs)
             }
-        );
+
+            // Container
+            else if (node.replaceValues) {
+                node.replaceValues(...replacementArgs)
+            }
+        });
     };
 });
