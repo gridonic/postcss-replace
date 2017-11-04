@@ -1,6 +1,8 @@
+// Dependencies
 const postcss = require('postcss');
 const deep = require('deep-get-set');
 
+// Default options, see README.md
 const defaults = {
     pattern: /{{\s?([^\s]+?)\s?}}/gi,
     commentsOnly: false,
@@ -22,7 +24,6 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
         const nodeWalker = css[options.commentsOnly ? 'walkComments' : 'walk'].bind(css);
 
         nodeWalker((node) => {
-
             // Node
             if (node.text) {
                 node.text = node.text.replace(...replacementArgs)
