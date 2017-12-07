@@ -1,7 +1,7 @@
 const postcss = require('postcss');
+const fs = require('fs');
 const plugin = require('../index');
 const pkg = require('../package.json');
-const fs = require('fs');
 
 /**
  * Runs the plugins process function. Tests whether the given input is equal

@@ -22,12 +22,17 @@
     "test": "jest"
   },
   "dependencies": {
-    "coveralls": "^3.0.0",
     "deep-get-set": "^1.1.0",
-    "postcss": "^6.0.13"
+    "postcss": "^6.0.14"
   },
   "devDependencies": {
-    "jest": "^21.2.1"
+    "coveralls": "^3.0.0",
+    "jest": "^21.2.1",
+    "jest-cli": "^21.2.1",
+    "stryker": "^0.15.5",
+    "stryker-api": "^0.11.0",
+    "stryker-javascript-mutator": "^0.2.3",
+    "stryker-jest-runner": "^0.3.0"
   },
   "repository": {
     "type": "git",
