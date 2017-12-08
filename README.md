@@ -63,6 +63,16 @@ in comments.
 
 This is the key → value object that provides the data for the plugin for replacing strings.
 
+## Testing
+
+Tests can be run via the following command:
+
+`$ npm run test`
+
+We use mutant-testing to test the resilience of out test. 
+Stryker can be run via the following command:
+
+`$ ./node_modules/.bin/stryker run`
 
 [npm-url]: https://www.npmjs.com/package/postcss-replace
 [npm-img]: https://img.shields.io/npm/v/postcss-replace.svg

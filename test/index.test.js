@@ -26,6 +26,10 @@ it('Should replace strings in comments and styles.', () => {
     return run('basic', { data: pkg });
 });
 
+it('Should fall back to default pattern if invalid pattern is supplied.', () => {
+    return run('basic', { data: pkg, pattern: [] });
+});
+
 it('Should not replace anything in styles when “commentsOnly” option is set to TRUE.', () => {
     return run('commentsOnly', { data: pkg, commentsOnly: true });
 });

@@ -13,8 +13,15 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
     const options = Object.assign({}, defaults, opts);
 
     return (css) => {
-        const regex = typeof options.pattern === 'string' ?
-            new RegExp(options.pattern, 'gi') : options.pattern;
+
+        // Check validity of provided pattern. If not valid, fall back to default.
+        let regex = defaults.pattern;
+
+        if (options.pattern instanceof RegExp) {
+            regex = options.pattern;
+        } else if (typeof options.pattern === 'string') {
+            regex = new RegExp(options.pattern, 'gi');
+        }
 
         const replacementArgs = [
             regex,
