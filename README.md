@@ -69,7 +69,7 @@ Tests can be run via the following command:
 
 `$ npm run test`
 
-We use mutant-testing to test the resilience of out test. 
+We use mutant-testing to test the resilience of our tests. 
 Stryker can be run via the following command:
 
 `$ ./node_modules/.bin/stryker run`
