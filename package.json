@@ -19,7 +19,9 @@
   "scripts": {
     "coverall": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "coverage": "jest --coverage",
-    "test": "jest"
+    "test": "npm run test:unit && npm run test:mutate",
+    "test:unit": "jest",
+    "test:mutate": "stryker run"
   },
   "dependencies": {
     "deep-get-set": "^1.1.0",

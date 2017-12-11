@@ -11,7 +11,7 @@ const pkg = require('../package.json');
  * @param {object} opts Options to be used by the plugin.
  * @return {function}
  */
-function run(input, opts) {
+function run(input, opts = {}) {
     const raw = fs.readFileSync(`./test/fixtures/${input}.css`, 'utf8');
     const expected = fs.readFileSync(`./test/fixtures/${input}.expected.css`, 'utf8');
 
@@ -26,8 +26,10 @@ it('Should replace strings in comments and styles.', () => {
     return run('basic', { data: pkg });
 });
 
-it('Should fall back to default pattern if invalid pattern is supplied.', () => {
-    return run('basic', { data: pkg, pattern: [] });
+it('Should throw a TypeError if invalid pattern is supplied.', () => {
+    return run('basic', { data: pkg, pattern: NaN }).catch(e =>
+        expect(e).toBeInstanceOf(TypeError)
+    )
 });
 
 it('Should not replace anything in styles when “commentsOnly” option is set to TRUE.', () => {
