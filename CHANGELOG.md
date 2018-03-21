@@ -2,7 +2,7 @@
 ###### 2018-03-21
 
 ###### Fixed
-- Empty strings not being considered for replacing. (#4)
+- Empty strings not being considered for replacing. ([#4])
 
 # [1.0.1]
 ###### 2017-12-08
@@ -32,3 +32,5 @@ First public release! 🎉
 [2b06e2d]: https://github.com/gridonic/postcss-replace/commit/2b06e2d8bc71e68a7aecf3132fb3b9b49579440e
 [29aafc9]: https://github.com/gridonic/postcss-replace/commit/29aafc9764f6df47c760c0d2d21f1134a7dcbf51
 [800998d]: https://github.com/gridonic/postcss-replace/commit/800998d7dff6ad93877fd6224815850781815dd4
+
+[#4]: https://github.com/gridonic/postcss-replace/issues/4
