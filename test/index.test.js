@@ -63,3 +63,19 @@ it('Should work with a custom RegEx string', () => {
 it('Should work with another custom RegEx string', () => {
     return run('otherRegex', { data: pkg, pattern: '%\\s?([^\\s]+?)\\s?%' });
 });
+
+it('Should work with empty string values', () => {
+    return run('empty', { data: { value: '' } });
+});
+
+it('Should work with undefined values', () => {
+    return run('noChanges', { data: { value: undefined } });
+});
+
+it('Should work with null values', () => {
+    return run('noChanges', { data: { value: null } });
+});
+
+it('Should work with null data', () => {
+    return run('noChanges', { data: null });
+});

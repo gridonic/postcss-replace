@@ -25,10 +25,15 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
             throw new TypeError('Did you provide a valid regex pattern?');
         }
 
-        const replacementArgs = [
-            regex,
-            (match, key) => (deep(options.data, key) || match)
-        ];
+        const replacementArgs = [regex, (match, key) => {
+            const replace = deep(options.data, key);
+
+            if (typeof replace !== 'string') {
+                return match;
+            }
+
+            return replace;
+        }];
 
         const nodeWalker = css[options.commentsOnly ? 'walkComments' : 'walk'].bind(css);
 
