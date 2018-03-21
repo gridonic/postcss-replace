@@ -36,7 +36,7 @@
 postcss([ require('postcss-replace') ])
 ```
 
-See [PostCSS](https://github.com/postcss/postcss) docs for examples for your environment.
+See [PostCSS](https://github.com/postcss/postcss) docs for [examples regarding usage](https://github.com/postcss/postcss#usage).
 
 ## Options
 
