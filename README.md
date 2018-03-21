@@ -72,7 +72,7 @@ Tests can be run via the following command:
 We use mutant-testing to test the resilience of our tests. 
 Stryker can be run via the following command:
 
-`$ ./node_modules/.bin/stryker run`
+`$ npm run test:mutate`
 
 [npm-url]: https://www.npmjs.com/package/postcss-replace
 [npm-img]: https://img.shields.io/npm/v/postcss-replace.svg
