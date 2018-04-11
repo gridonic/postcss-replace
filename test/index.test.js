@@ -79,3 +79,10 @@ it('Should work with null values', () => {
 it('Should work with null data', () => {
     return run('noChanges', { data: null });
 });
+
+it('Should not replace multiple times', () => {
+    return run('noDuplicate', {
+        pattern: /(a)/g,
+        data: { a: 'abc'}
+    });
+});

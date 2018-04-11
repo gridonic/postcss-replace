@@ -1,0 +1,10 @@
+html::before {
+  content: "abcbc";
+}
+
+@media only screen {
+  html::before {
+    content: "abcbc";
+  }
+}
+

@@ -35,17 +35,19 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
             return replace;
         }];
 
-        const nodeWalker = css[options.commentsOnly ? 'walkComments' : 'walk'].bind(css);
+        css[options.commentsOnly ? 'walkComments' : 'walk']((node) => {
+            switch (node.constructor.name) {
+                case 'Comment':
+                    node.text = node.text.replace(...replacementArgs);
+                    break;
 
-        nodeWalker((node) => {
-            // Node
-            if (node.text) {
-                node.text = node.text.replace(...replacementArgs)
-            }
+                case 'Declaration':
+                    node.value = node.value.replace(...replacementArgs);
+                    break;
 
-            // Container
-            else if (node.replaceValues) {
-                node.replaceValues(...replacementArgs)
+                case 'AtRule':
+                    node.params = node.params.replace(...replacementArgs);
+                    break;
             }
         });
     };
