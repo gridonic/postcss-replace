@@ -1,6 +1,7 @@
 // Dependencies
 const postcss = require('postcss');
 const deep = require('deep-get-set');
+const kindOf = require('kind-of');
 
 // Default options, see README.md
 const defaults = {
@@ -22,7 +23,7 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
         } else if (typeof options.pattern === 'string') {
             regex = new RegExp(options.pattern, 'gi');
         } else {
-            throw new TypeError('Did you provide a valid regex pattern?');
+            throw new TypeError(`Invalid pattern provided. It is expected to be a string or an instance of RegExp. Got: ${kindOf(options.pattern)}`);
         }
 
         const replacementArgs = [regex, (match, key) => {
