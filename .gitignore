@@ -1,5 +1,6 @@
 node_modules
 coverage
+.stryker-tmp/
 
 # IDEA user specific stuff
 .idea/**/workspace.xml
