@@ -15,7 +15,7 @@ function run(input, opts = {}) {
     const raw = fs.readFileSync(`./test/fixtures/${input}.css`, 'utf8');
     const expected = fs.readFileSync(`./test/fixtures/${input}.expected.css`, 'utf8');
 
-    return postcss([plugin(opts)]).process(raw)
+    return postcss([plugin(opts)]).process(raw, { from: undefined })
         .then(result => {
             expect(result.css).toEqual(expected);
             expect(result.warnings().length).toBe(0);
