@@ -1,5 +1,14 @@
+# [1.0.5]
+###### 2019-03-11
+
+###### Changed
+- Changes to dev-dependencies only: Updated to newest versions of jest, stryker and coveralls
+
+
 # [1.0.4]
 ###### 2019-01-25
+
+###### Changed
 - Changes to dependencies only (mainly moving from postCSS 6 to 7) and some related, internal configurations.
 After internal discussions and reading about similar cases at https://github.com/semver/semver/issues/148 
 we decided that such a changes should be met with a patch-level version bump, not more.
