@@ -1,3 +1,9 @@
+# [1.0.8]
+###### 2019-09-13
+
+###### Changed
+- Updating dependencies (including security updates)
+
 # [1.0.7]
 ###### 2019-07-12
 
