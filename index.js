@@ -63,6 +63,10 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
                 case 'AtRule':
                     node.params = node.params.replace(...replacementArgs);
                     break;
+                
+                case 'Rule':
+                    node.selector = node.selector.replace(...replacementArgs);
+                    break;
             }
         });
     };
