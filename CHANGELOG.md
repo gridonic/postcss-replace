@@ -1,3 +1,10 @@
+# [1.1.0]
+###### 2019-10-21
+
+###### Changed
+- Enable replacements for selectors (thx doplumi!)
+- Updating dependencies (including security updates)
+
 # [1.0.8]
 ###### 2019-09-13
 
