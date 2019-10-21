@@ -86,3 +86,10 @@ it('Should not replace multiple times', () => {
         data: { a: 'abc'}
     });
 });
+
+it('Should replace strings in selectors', () => {
+    return run('selectors', { 
+        pattern: /(foo)/g,
+        data: { 'foo': 'bar' },
+    });
+});
