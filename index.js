@@ -26,7 +26,7 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
             throw new TypeError(`Invalid pattern provided. It is expected to be a string or an instance of RegExp. Got: ${kindOf(options.pattern)}`);
         }
 
-        const replacementArgs = [regex, (match, key) => {
+        const replacementArgs = options.data && options.data.value != null ? [regex, options.data.value] : [regex, (match, key) => {
             const replace = deep(options.data, key);
 
             if (typeof replace !== 'string') {

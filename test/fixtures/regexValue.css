@@ -1,0 +1,3 @@
+.letscheck [ng_host_1]:delete .example{
+    content: 'works';
+}

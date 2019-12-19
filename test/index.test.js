@@ -22,6 +22,7 @@ function run(input, opts = {}) {
         });
 }
 
+
 it('Should replace strings in comments and styles.', () => {
     return run('basic', { data: pkg });
 });
@@ -91,5 +92,20 @@ it('Should replace strings in selectors', () => {
     return run('selectors', { 
         pattern: /(foo)/g,
         data: { 'foo': 'bar' },
+    });
+});
+
+it('Should replace regex to empty in selectors', () => {
+    return run('regexEmpty', { 
+        pattern: new RegExp(/\[.*\]:delete\s+/, 'gi'),
+        data: { value: '' }
+    });
+});
+
+
+it('Should replace regex to value in selectors', () => {
+    return run('regexValue', { 
+        pattern: new RegExp(/\[.*\]:delete/, 'gi'),
+        data: { value: '.value' }
     });
 });
