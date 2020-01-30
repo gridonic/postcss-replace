@@ -97,15 +97,23 @@ it('Should replace strings in selectors', () => {
 
 it('Should replace regex to empty in selectors', () => {
     return run('regexEmpty', { 
-        pattern: new RegExp(/\[.*\]:delete\s+/, 'gi'),
-        data: { value: '' }
+        pattern: /\[.*\]:delete\s+/gi,
+        data: { replaceAll: '' }
     });
 });
 
 
-it('Should replace regex to value in selectors', () => {
+it('Should replace regex to single value in selectors', () => {
     return run('regexValue', { 
-        pattern: new RegExp(/\[.*\]:delete/, 'gi'),
-        data: { value: '.value' }
+        pattern: /\[.*\]:delete/gi,
+        data: { replaceAll: '.newValue' }
+    });
+});
+
+
+it('Should work with custom Regex string', () => {
+    return run('regexSignelValue', { 
+        pattern: new RegExp(/%replace_me%/, 'gi'),
+        data: { replaceAll: 'new awesome string :)' }
     });
 });
