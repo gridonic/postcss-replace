@@ -63,7 +63,7 @@ in comments.
 
 This is the key → value object that provides the data for the plugin for replacing strings.
 
-- If the key `replaceAll` provided all matched string will be replaced by the given value
+- If the key `replaceAll` is provided all matched strings will be replaced by the given value
 e.g:
 `data: { replaceAll: 'replace all matched with this text' }` 
 

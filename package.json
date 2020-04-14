@@ -31,11 +31,10 @@
   "devDependencies": {
     "coveralls": "^3.0.3",
     "jest": "^25.3.0",
-    "jest-cli": "^24.3.1",
-    "stryker": "^0.35.1",
-    "stryker-api": "^0.24.1",
-    "stryker-javascript-mutator": "^0.14.1",
-    "stryker-jest-runner": "^1.4.1"
+    "jest-cli": "^25.3.0",
+    "@stryker-mutator/core": "^3.1.0",
+    "@stryker-mutator/javascript-mutator": "^3.1.0",
+    "@stryker-mutator/jest-runner": "^3.1.0"
   },
   "repository": {
     "type": "git",
