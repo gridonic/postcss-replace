@@ -1,3 +1,11 @@
+# [1.1.1]
+###### 2020-04-14
+
+###### Changed
+- Fix typos in readme
+- Updating dependencies (including security updates)
+
+
 # [1.1.0]
 ###### 2019-10-21
 
