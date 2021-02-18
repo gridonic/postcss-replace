@@ -57,6 +57,7 @@ module.exports = postcss.plugin('postcss-replace', (opts = defaults) => {
                     break;
 
                 case 'Declaration':
+                    node.prop = node.prop.replace(...replacementArgs);
                     node.value = node.value.replace(...replacementArgs);
                     break;
 
