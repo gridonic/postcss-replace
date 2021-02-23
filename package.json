@@ -33,7 +33,7 @@
     "jest": "^26.2.1",
     "jest-cli": "^26.0.1",
     "@stryker-mutator/core": "^3.1.0",
-    "@stryker-mutator/javascript-mutator": "^3.1.0",
+    "@stryker-mutator/javascript-mutator": "^4.0.0",
     "@stryker-mutator/jest-runner": "^3.1.0"
   },
   "repository": {
