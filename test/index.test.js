@@ -89,31 +89,41 @@ it('Should not replace multiple times', () => {
 });
 
 it('Should replace strings in selectors', () => {
-    return run('selectors', { 
+    return run('selectors', {
         pattern: /(foo)/g,
         data: { 'foo': 'bar' },
     });
 });
 
 it('Should replace regex to empty in selectors', () => {
-    return run('regexEmpty', { 
+    return run('regexEmpty', {
         pattern: /\[.*\]:delete\s+/gi,
         data: { replaceAll: '' }
     });
 });
 
-
 it('Should replace regex to single value in selectors', () => {
-    return run('regexValue', { 
+    return run('regexValue', {
         pattern: /\[.*\]:delete/gi,
         data: { replaceAll: '.newValue' }
     });
 });
 
-
 it('Should work with custom Regex string', () => {
-    return run('regexSignelValue', { 
+    return run('customRegexValue', {
         pattern: new RegExp(/%replace_me%/, 'gi'),
         data: { replaceAll: 'new awesome string :)' }
+    });
+});
+
+it('Should replace properties and values', () => {
+    return run('replaceProperties', {
+        pattern: /##\((.*?)\)/g,
+        data: {
+            'prop': 'color',
+            'name': 'basic',
+            'key': 'dark',
+            'value': '#9c9c9c'
+        },
     });
 });

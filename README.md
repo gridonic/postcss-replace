@@ -65,7 +65,7 @@ This is the key → value object that provides the data for the plugin for repla
 
 - If the key `replaceAll` is provided all matched strings will be replaced by the given value
 e.g:
-`data: { replaceAll: 'replace all matched with this text' }` 
+`data: { replaceAll: 'replace all matched strings with this text' }` 
 
 ## Testing
 
