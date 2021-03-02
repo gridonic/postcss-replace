@@ -1,3 +1,12 @@
+# [1.1.3]
+###### 2021-03-02
+
+###### Changed
+- Add new test ro replacing properties
+- Some (non functional relevant) clean-up work
+- Updating dependencies
+
+
 # [1.1.2]
 ###### 2020-04-14
 
