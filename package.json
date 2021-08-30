@@ -30,7 +30,7 @@
   },
   "devDependencies": {
     "coveralls": "^3.0.3",
-    "jest": "^26.2.1",
+    "jest": "^27.1.0",
     "jest-cli": "^26.0.1",
     "@stryker-mutator/core": "^3.1.1",
     "@stryker-mutator/javascript-mutator": "^3.3.1",
