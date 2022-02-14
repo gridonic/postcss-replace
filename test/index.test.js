@@ -28,7 +28,7 @@ it('Should replace strings in comments and styles.', () => {
 });
 
 it('Should throw a TypeError if invalid pattern is supplied.', () => {
-    return run('basic', { data: pkg, pattern: NaN }).catch(e =>
+    return run('basic', { data: pkg, pattern: '' }).catch(e =>
         expect(e).toBeInstanceOf(TypeError)
     )
 });
