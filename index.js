@@ -38,17 +38,17 @@ function postCSSReplace(opts = defaults) {
         OnceExit(root) {
             root[options.commentsOnly ? 'walkComments' : 'walk']((node) => {
 
-                // Before we had the switch statement, we just used node.replaceValues(). This could potentially lead to
+                // Before the switch statement was used, we used node.replaceValues(). This lead to
                 // incorrect behaviour as described in https://github.com/gridonic/postcss-replace/issues/5.
                 //
-                // So for example if the CSS contains at-rules like @media, calling replaceValues() would replace
+                // For example: if the CSS contains at-rules like @media, calling replaceValues() would replace
                 // everything inside the @media { … } statement and since we are walking through *all* nodes, we would
                 // encounter the nodes from the @media statement again in the next iteration/call of our walk function.
                 //
                 // This is why we have refactored the logic of the walk function to use a switch statement in order to do
                 // the replacement only on the relevant nodes and use the appropriate replacement logic.
                 //
-                // Furthermore it also makes adding/handling new cases quite comfortable.
+                // This makes adding/handling new cases quite comfortable.
                 //
                 // @see http://api.postcss.org/
                 switch (node.constructor.name) {

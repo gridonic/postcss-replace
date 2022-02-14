@@ -1,3 +1,11 @@
+# [2.0.0]
+###### 2022-02-14
+
+###### Changed
+- Migration to PostCSS 8
+- Updated compatible node versions
+
+
 # [1.1.3]
 ###### 2021-03-02
 
