@@ -38,7 +38,7 @@
     "@stryker-mutator/jest-runner": "^5.6.1",
     "coveralls": "^3.1.1",
     "jest": "^27.4.7",
-    "jest-cli": "^27.4.7",
+    "jest-cli": "^29.0.2",
     "postcss": "^8.4.6"
   },
   "repository": {
