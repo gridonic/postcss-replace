@@ -28,9 +28,9 @@ it('Should replace strings in comments and styles.', () => {
 });
 
 it('Should throw a TypeError if invalid pattern is supplied.', () => {
-    return run('basic', { data: pkg, pattern: '' }).catch(e =>
-        expect(e).toBeInstanceOf(TypeError)
-    )
+    expect(() => {
+        return run('basic', { data: pkg, pattern: null })
+    }).toThrow(TypeError);
 });
 
 it('Should not replace anything in styles when “commentsOnly” option is set to TRUE.', () => {
