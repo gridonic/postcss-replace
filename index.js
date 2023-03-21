@@ -1,5 +1,5 @@
 // Dependencies
-const deep = require('deep-get-set');
+const objectPath = require('object-path');
 const kindOf = require('kind-of');
 
 // Default options, see README.md
@@ -24,7 +24,7 @@ function postCSSReplace(opts = defaults) {
     }
 
     const replacementArgs = options.data && options.data.replaceAll != null ? [regex, options.data.replaceAll] : [regex, (match, key) => {
-        const replace = deep(options.data, key);
+        const replace = objectPath.get(options.data, key);
 
         if (typeof replace !== 'string') {
             return match;
