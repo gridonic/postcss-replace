@@ -1,3 +1,9 @@
+# [2.0.1]
+###### Unreleased
+
+###### Changed
+- Replacing `deep-get-set` with `object-path` to fix security issue with [prototype pollution](https://github.com/advisories/GHSA-mjjj-6p43-vhhv). 
+
 # [2.0.0]
 ###### 2022-02-14
 
